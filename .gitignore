@@ -74,7 +74,7 @@ StyleCopReport.xml
 *_h.h
 *.ilk
 *.meta
-*.obj
+# *.obj
 *.iobj
 *.pch
 *.pdb
@@ -400,3 +400,4 @@ build_files
 raylib-master
 Makefile
 /*.sln
+!resources/
