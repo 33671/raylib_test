@@ -14,10 +14,10 @@ by Jeffery Myers is marked with CC0 1.0. To view a copy of this license, visit h
 int main()
 {
     // Tell the window to use vsync and work on high DPI displays
-    SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI | FLAG_WINDOW_TRANSPARENT | FLAG_WINDOW_UNDECORATED | FLAG_WINDOW_TOPMOST);
+    SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI | FLAG_WINDOW_TRANSPARENT | FLAG_WINDOW_UNDECORATED | FLAG_WINDOW_TOPMOST | FLAG_WINDOW_ALWAYS_RUN | FLAG_MSAA_4X_HINT | FLAG_FULLSCREEN_MODE | FLAG_WINDOW_MOUSE_PASSTHROUGH);
 
     // Create the window and OpenGL context
-    InitWindow(700, 400, "Hello Raylib");
+    InitWindow(1920, 1080, "Hello Raylib");
 
     // Utility function from resource_dir.h to find the resources folder and set it as the current working directory so we can load from it
     SearchAndSetResourceDir("resources");
